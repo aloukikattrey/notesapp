@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.js": "/notesapp/static/js/main.db1e4fea.js",
+    "static/media/Nlogo.png": "/notesapp/static/media/Nlogo.722b1cb59faf13e2dfac.png",
+    "static/media/pfp.png": "/notesapp/static/media/pfp.b08fd7dbbe98eb038f0d.png",
+    "index.html": "/notesapp/index.html",
+    "main.db1e4fea.js.map": "/notesapp/static/js/main.db1e4fea.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.db1e4fea.js"
+  ]
+}

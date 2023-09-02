@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Poppins:wght@200;300;600&family=Roboto:wght@100&family=Varela+Round&family=Work+Sans:wght@100&display=swap');
+
+body {
+    padding: 0%;
+    margin: 0;
+    background: var(--maincolor);
+    color: var(--textcolor);
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+:root {
+    --maincolor: #ffffff;
+    --boxcolor: #ffffff;
+    --textcolor: rgb(0, 0, 0);
+    --writecolor: rgb(235, 235, 235);
+    --notescolor: rgb(255, 198, 85);
+
+}
+
+.dark {
+    --maincolor: #1c1f20;
+    --boxcolor: #000000;
+    --textcolor: white;
+    --writecolor: rgb(43, 43, 43);
+    --notescolor: rgb(255, 217, 141);
+}
+
+.main {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.boss {
+    height: 100vh;
+
+}
+
+.logo {
+    color: var(--textcolor);
+    font-size: 30px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+}
+.logo p{
+    margin-left: -5px;
+}
+.logo span{
+    font-size: 19px;
+    margin-top: 6px;
+}
+#nlogo{
+    width: 38px;
+    height:38px ;
+
+}
+.header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--maincolor);
+    color: var(--textcolor);
+    padding: 0px 13px 0px 9px;
+    box-shadow: 3px 1px 9px -3px #000000;
+}
+.header>p {
+    font-weight: 900;
+}
+
+/* .header p span {
+    font-weight: 100;
+    font-size: 14px;
+    margin-left: 5px;
+    font-family: Arial, Helvetica, sans-serif
+} */
+
+
+#pfp {
+    width: 22px;
+    height: 22px;
+    margin-left: 17px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.rightsec {
+    display: flex;
+    align-items: center;
+}
+
+.rightsec>:nth-child(3) {
+    cursor: pointer;
+    color: gray;
+    font-size: 17px;
+}
+
+.buttondiv {
+    background-color: var(--maincolor);
+    height: 84px;
+    width: 100vw;
+}
+
+#mode {
+    cursor: pointer;
+    color: var(--textcolor);
+    background: transparent;
+    font-size: 23px;
+    border: none;
+    margin-left: 17px;
+}
+
+.fab {
+    position: fixed;
+    top: 8.3%;
+    left: 2%;
+    display: flex;
+    /* background-color: #BC6FF1; */
+
+}
+
+.plus {
+    background-image: linear-gradient(#635985, #443C68);
+    height: 56px;
+    color: var(--textcolor);
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    width: 56px;
+    margin-top: 15px;
+
+}
+
+.plus>p {
+    color: white;
+    font-size: 23px;
+    margin: 0;
+    transition: .1s ease-out;
+}
+
+.plus p:hover {
+    font-size: 40px;
+}
+
+.createbox {
+    background-color: var(--boxcolor);
+    width: 469px;
+    margin-left: 11px;
+    margin-top: 10px;
+    border-radius: 20px;
+    height: max-content;
+    transition: opacity 200ms, display 200ms;
+    box-shadow: 2px 1px 15px -9px #000000;
+
+}
+
+.titlebox {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 55px;
+}
+
+#warning {
+    font-size: 12px;
+    font-weight: 100;
+    color: #ffda6a;
+    padding: 0%;
+    display: none;
+    margin: 0;
+    margin-left: 19px;
+    margin-bottom: 5px;
+
+}
+
+.titlebox>span>input {
+    background-color: var(--boxcolor);
+    color: var(--textcolor);
+    width: 360px;
+    margin-top: 3px;
+    height: 41px;
+    margin-left: 14px;
+    border: none;
+    padding: 0px 7px 0px 7px;
+    outline: none;
+    font-size: 18px;
+}
+.writearea>:nth-child(1) {
+    background-color: var(--writecolor);
+    color: var(--textcolor);
+    font-family: 'Poppins', sans-serif;
+    width: 420px;
+    margin-top: 0px;
+    height: 140px;
+    margin-left: 14px;
+    border-radius: 14px;
+    border: none;
+    padding: 4px 8px 0px 8px;
+    resize: none;
+    outline: none;
+    margin-bottom: 9px;
+    font-size: 14px;
+}
+.line {
+    width: 379px;
+    height: 1px;
+    margin-left: 11px;
+    background-color: #6aeeff;
+}
+
+.buttonsave {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    font-size: 24px;
+    color: var(--textcolor);
+    border: none;
+    background-color: rgb(255, 162, 0);
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.buttoncancel {
+    height: 40px;
+    margin-left: 15px;
+    width: 86px;
+    background-color: var(--maincolor);
+    border-radius: 28px;
+    border: 2px solid #BC6FF1;
+    color: white;
+    cursor: pointer;
+
+}
+
+
+.titlebox>:nth-child(1) {
+    margin-right: 20px;
+}
+
+.createbox>input {
+
+    height: 50px;
+}
+
+.writearea {
+    display: block;
+    margin-top: 4px;
+
+}
+
+
+
+
+.notes {
+    margin-right: 40px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: var(--notescolor);
+    width: 236px;
+    height: 160px;
+    border-radius: 13px;
+    overflow-y: hidden;
+    display: flex;
+    overflow-x: hidden;
+    border: 1px solid var(--textcolor);
+
+}
+
+.notesall :nth-child(1) {
+    color: black;
+    max-height: 24px;
+    max-width: 211px;
+    padding: 0;
+    margin: 0;
+    font-weight: 600;
+    overflow: hidden;
+}
+
+.notesall :nth-child(2) {
+    color: black;
+    height: 142px;
+    max-width: 211px;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    white-space: pre-line;
+
+}
+
+.notesbody {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    max-width: 100vw;
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+    background-color: var(--maincolor);
+    overflow-y: visible;
+    /* overflow-x: visible; */
+}
+
+.notesall {
+    flex: 1;
+}
+
+.delete-btn {
+    border: transparent;
+    background-color: transparent;
+    cursor: pointer;
+    width: 21px;
+    height: 21px;
+    padding: 0px;
+    font-size: 24px;
+
+}
+.warning-bx{
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background: #332701ff;
+    height: 40px;
+    width: fit-content;
+    padding: 0px 7px 0px 7px;
+    border-radius: 10px;
+    border: 2px solid #ebc454ff;
+    justify-content: space-between;
+    align-items:center;
+    gap: 15px;
+}
+.warning-bx>p{
+    /* color: rgb(28, 186, 117); */
+    font-size: 14px;
+    
+}
+.warning-bx>div>i{
+    /* color: rgb(11, 57, 36); */
+    font-size: 20px;
+}
